@@ -2,7 +2,8 @@
   <div class="about__container">
     <span class="section-subtitle">tradition and love</span>
     <h2 class="section-title">how it’s made?</h2>
-    <picture class="about__img">
+    <div class="about__img">
+    <picture>
       <source
           media="(min-width: 1200px)"
           srcset="
@@ -19,6 +20,7 @@
                   height="279"
                 />
     </picture>
+    </div>
     <ul class="about__desc">
       <li class="about__desc-item about__desc-item--bold">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -34,7 +36,11 @@
         Aliquam erat volutpat. Aenean accumsan.
       </li>
     </ul>
-    <button class="button--mode-light button" type="button">
-      <span class="button-text">Read more</span></button>
+      <button class="button--mode-light button " type="button">
+      <span class="button-text">Read more</span>
+      <svg class="button__ico" width="12" height="12">
+        <use href="./images/icons.svg#icon-strelka1"></use>
+      </svg>
+    </button>
   </div>
 </section>
