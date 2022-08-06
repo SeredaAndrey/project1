@@ -2,8 +2,9 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0;
   }
     .contact__svg{
-        transform: translateY(5px);
-        fill: #D41443;
+        transform: translateY(2px);
+        stroke: $color-primary-hover;
+        transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   .list{
     list-style: none;
@@ -16,10 +17,10 @@ h1, h2, h3, h4, h5, h6, p{
 .contact{
     height: 1842px;
     background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(255,245,246,1) 18%);
-color: black;
+color: $color-secondary-text;
     padding-top: 30px;
     padding-bottom: 20px;
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
 }
 .contact__list{
@@ -28,7 +29,7 @@ color: black;
     width: 280px;
 }
 .contact__item{
-        background: #FFFFFF;
+        background: $color-primary;
 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 padding: 40px;
@@ -36,7 +37,7 @@ padding: 40px;
 .contact__item-box{
     display: block;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $border-color;
     margin-bottom: 24px;
 }
 .contact__margin-box{
@@ -45,25 +46,25 @@ padding: 40px;
 }
 .contact__strong{
     padding: 5px 30px;
-    background: #F0D1A5;
+    background: $bgc-card2;
     border-radius: 4px;
     font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
-color: #FFFFFF;
+color: $color-primary;
 }
 .contact__strong-food{
     padding: 5px 30px;
-    background: #C2E297;
+    background: bgc-card3;
     border-radius: 4px;
     font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
-color: #FFFFFF;
+color: $color-primary;
 }
 .contact__b{
     font-family: 'DM Sans';
@@ -71,7 +72,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
-color: black;
+color: $color-secondary-text;
 }
 .contact__text{
     font-family: 'DM Sans';
@@ -80,11 +81,11 @@ font-weight: 500;
 font-size: 12px;
 line-height: 18px;
 
-color: #907E82;
+color: $color-secondary-text-contrast;
 }
 .contact__data-box{
     padding-bottom: 16px;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $border-color;
     margin-bottom: 24px;
 }
 .data-box__b{
@@ -93,7 +94,7 @@ color: #907E82;
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-    color: #000000;
+    color: $color-secondary-text;
 }
 .data-box__p{
     font-family: 'DM Sans';
@@ -101,7 +102,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
-color: #FFA5BA;
+color: $bgc-card1;
 margin-bottom: 8px;
 }
 .contact__link{
@@ -110,12 +111,12 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 18px;
-color: #907E82;
+color: $color-secondary-text-contrast;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__link:hover,
 .contact__link:focus{
-    color: #D41443;
+    color: $color-primary-hover;
 }
 .contact__item:not(:last-child){
     margin-bottom: 20px;
@@ -131,8 +132,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 21px;
-    color: #D41443;;
-    background-color: #FFFFFF;
+    color: $color-primary-hover;
+    background-color: $color-primary;
     width: 161px;
 height: 44px;
 border-radius: 22px;
@@ -142,13 +143,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact__button:hover,
 .contact__button:focus{
-    color: white;
-    background-color: #D41443;
+    color: $color-primary;
+    background-color: $color-primary-hover;
+    stroke: $color-primary;
+}
+.contact__button:hover .contact__svg,
+.contact__button:focus .contact__svg{
+    stroke: $color-primary;
 }
 .margin__button{
     margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
         .contact{
             height: 965px;
             background: linear-gradient(180deg, rgba(255,255,255,1) 34%, rgba(255,245,246,1) 34%);
@@ -226,7 +232,7 @@ height: 44px;
         font-size: 14px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
         .contact{
             height: 1036px;
             background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(255,245,246,1) 15%);
