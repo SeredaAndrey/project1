@@ -1,0 +1,80 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    background-color: $bgc-primary;
+
+    border: 1px dotted red;
+    min-height: 36px;
+    margin: 0 auto;
+    @media screen and (max-width: $tablet) {
+      width: $mobile;
+      padding: 8px 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      padding: 32px 32px 0 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
+  &__logo {
+    &--margin {
+      @media screen and (min-width: $desktop) {
+        margin-right: 128px;
+      }
+    }
+  }
+  &__nav {
+    display: none;
+    @media screen and (min-width: $desktop) {
+      display: block;
+      //   padding: 37px 16px 0 16px;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: $color-primary;
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      @media screen and (min-width: $desktop) {
+        margin-right: 35px;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $color-primary-hover;
+    }
+  }
+  &--invisible {
+    @media screen and (max-width: $desktop) {
+      display: none;
+    }
+  }
+  &--margin {
+    @media screen and (max-width: $desktop) {
+      margin-left: auto;
+    }
+  }
+}
