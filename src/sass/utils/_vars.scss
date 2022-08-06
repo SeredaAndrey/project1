@@ -1,0 +1,29 @@
+// цвет бэкграунда героя и шапки
+$bgc-primary: #ffb8ca;
+// цвет текстовых элементов героя и шапки (h1 h2 and p)
+$color-primary: #ffffff;
+// тоже при ховере и фокусе а также контрастный текст
+$color-primary-hover: #d41443;
+
+// цвет бэкграунда остальных секций
+$bgc-secondary: #e5e5e5;
+// цвет текстовых элементов остальных секций
+$color-secondary-title: #d41443; // h2
+$color-secondary-descr: #ffa5ba;
+$color-secondary-text: #000000;
+$color-secondary-text-contrast: #907e82; //span text
+$color-secondary-text-contrast-cont: #d41443; //contact, readme more...
+$color-secondary-text-contrast-time: #ffa5ba; //purple
+$color-secondary-text-contrast-product: #ffffff; //text card prduct
+// цвет бэкграунда карточек секции продукта
+$bgc-card1: #ffb8ca;
+$bgc-card2: #f0d1a5;
+$bgc-card3: #c2e297;
+
+// buttons
+$bgc-buttons: #ffffff;
+$bgc-buttons-hover: #ecebeb;
+
+// ico
+$fill-ico: #fea5bb;
+$fill-ico-hover: #d41443;
