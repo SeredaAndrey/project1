@@ -1,10 +1,11 @@
 .header {
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
 
     background-color: $bgc-primary;
-
+    width: $mobile;
     // border: 1px dotted red;
     min-height: 36px;
     margin: 0 auto;
@@ -87,6 +88,7 @@
       height: 14px;
 
       display: none;
+      z-index: 150;
     }
     &.is-open {
       .header__burger-icoclose {

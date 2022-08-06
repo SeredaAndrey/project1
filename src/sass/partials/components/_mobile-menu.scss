@@ -1,0 +1,17 @@
+.header__menu-container {
+  @media screen and (max-width: $tablet) {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    // padding: 40px 48px;
+    background-color: $bgc-primary;
+    z-index: 100;
+    display: none;
+    &.is-open {
+      display: block;
+    }
+    overflow-y: scroll;
+  }
+}
