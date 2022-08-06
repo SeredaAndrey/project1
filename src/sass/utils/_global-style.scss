@@ -1,3 +1,8 @@
+body {
+  &.menu-open {
+    overflow: hidden;
+  }
+}
 h1 {
   font-family: 'Titan One';
   font-style: normal;
