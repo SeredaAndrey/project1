@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
-.contact__list {
+.contact__conteiner-list {
   margin: 0 auto;
   margin-bottom: 32px;
   width: 280px;
@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px;
+  width: 280px;
 }
 
 .contact__item-box {
@@ -68,7 +69,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contact__strong-food {
   padding: 5px 30px;
-  background: bgc-card3;
+  background: #c2e297;
   border-radius: 4px;
   font-family: "DM Sans";
   font-style: normal;
@@ -200,12 +201,14 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 40px 16px 20px 16px;
     width: 768px;
   }
-  .contact__list {
+  .contact__conteiner-list {
     padding-left: 0;
     margin-left: 0;
-    display: flex;
     margin-bottom: 60px;
     width: 768px;
+  }
+  .contact__list {
+    display: flex;
   }
   .contact__item {
     padding: 40px 32px;
