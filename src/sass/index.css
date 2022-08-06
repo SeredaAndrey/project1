@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact__svg {
+  transform: translateY(5px);
   fill: #D41443;
 }
 
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contact {
   height: 1842px;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 13%, rgb(255, 245, 246) 13%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 18%, rgb(255, 245, 246) 18%);
   color: black;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -144,6 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact__button {
+  display: inline-block;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -171,9 +173,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (min-width: 768px) {
   .contact {
-    margin: 0 auto;
     height: 965px;
-    background: linear-gradient(180deg, rgb(255, 255, 255) 32%, rgb(255, 245, 246) 32%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 34%, rgb(255, 245, 246) 34%);
     width: 768px;
   }
   .contact__strong-food {
@@ -193,14 +194,15 @@ h1, h2, h3, h4, h5, h6, p {
     width: 768px;
   }
   .contact__list {
-    margin: 0 auto;
+    padding-left: 0;
+    margin-left: 0;
     display: flex;
-    justify-content: center;
     margin-bottom: 60px;
+    width: 768px;
   }
   .contact__item {
     padding: 40px 32px;
-    width: 368px;
+    width: 224px;
   }
   .contact__item:not(:last-child) {
     margin-bottom: 0;
@@ -248,7 +250,7 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 1200px) {
   .contact {
     height: 1036px;
-    background: linear-gradient(180deg, rgb(255, 255, 255) 13%, rgb(255, 245, 246) 13%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 15%, rgb(255, 245, 246) 15%);
   }
   .contact__text {
     font-size: 16px;
@@ -266,8 +268,12 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
   }
   .contact {
+    margin: 0 auto;
     padding: 60px 16px;
     width: 1200px;
+  }
+  .contact__item-box {
+    width: 288px;
   }
   .contact__item {
     width: 368px;
