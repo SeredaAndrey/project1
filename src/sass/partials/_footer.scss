@@ -1,32 +1,26 @@
 .footer {
     background: #fff5f6;
     padding-top: 20px;
-    width: 320px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
 
     &__container {
         display: block;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 320px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 0 20px 40px 20px;
 
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
+
+            width: 768px;
         }
 
         @media screen and (min-width: 1200px) {
-
+            width: 1200px;
         }
     }
 
@@ -134,12 +128,7 @@
 }
 
 .contact-info {
-    margin-bottom: 40px;
     margin-left: auto;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-    }
 
     &__tel {
         display: flex;

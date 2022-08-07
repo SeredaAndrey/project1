@@ -159,6 +159,11 @@ a {
     display: none;
   }
 }
+.header--margin {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
 @media screen and (min-width: 1200px) {
   .header--margin {
     margin-left: auto;
@@ -175,6 +180,12 @@ a {
   cursor: pointer;
   stroke: #ffffff;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    top: 46px;
+    right: 224px;
+  }
 }
 .header__burger-icomenu {
   width: 20px;
@@ -243,16 +254,37 @@ a {
 .hero {
   margin: 0 auto;
   width: 320px;
-  height: 443px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
 }
 
 .hero__container {
   position: relative;
   background-color: #ffb8ca;
-  width: 320px;
+  width: 100%;
   height: 443px;
   padding-left: 20px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .hero__position {
@@ -260,21 +292,40 @@ a {
   top: 136px;
   z-index: 15;
 }
+@media screen and (min-width: 768px) {
+  .hero__position {
+    top: 100px;
+  }
+}
 
 .hero__name {
   font-family: Titan One;
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.04em;
+  line-height: 1;
   margin: 0;
   width: 218px;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .hero__name {
+    line-height: 1.1;
+    font-size: 22px;
+    width: 162px;
+  }
+}
 
 .hero__name--color {
   font-size: 48px;
   color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .hero__name--color {
+    line-height: 1.1;
+    font-size: 34px;
+  }
 }
 
 .hero__buttons {
@@ -295,13 +346,14 @@ a {
   border: none;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #ecebeb;
 }
 
 .btn--clr {
-  color: #fff;
+  color: #ffffff;
   background-color: #d41443;
   margin-right: 8px;
   width: 62px;
@@ -314,12 +366,20 @@ a {
   position: absolute;
   bottom: 0;
   right: 32px;
-  max-width: 171px;
-  max-height: 410px;
+  width: 171px;
+  height: 410px;
   display: block;
   max-width: 100%;
   height: auto;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    bottom: 0;
+    left: 40%;
+    width: 143px;
+    height: 336px;
+  }
 }
 .hero__img ::before {
   position: absolute;
@@ -332,6 +392,107 @@ a {
   border-radius: 50%;
   background-color: #ffa5ba;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .hero__img ::before {
+    bottom: 45px;
+    left: -65px;
+  }
+}
+
+.hero__part {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  z-index: 15;
+}
+@media screen and (max-width: 767px) {
+  .hero__part {
+    display: none;
+  }
+}
+
+.part__desc {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 114px;
+  height: 48px;
+}
+
+.hero__side {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 120px;
+  position: relative;
+}
+
+.hero__cafe {
+  position: relative;
+}
+
+.hero__food {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50px;
+  height: 50px;
+}
+
+.hero--position ::before {
+  position: absolute;
+  display: block;
+  bottom: 35px;
+  right: -4px;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.hero--pstn ::before {
+  position: absolute;
+  display: block;
+  bottom: 85px;
+  right: -4px;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.cafe__numbers {
+  font-family: Titan One;
+  font-size: 28px;
+  font-weight: 400;
+  color: #d41443;
+  display: block;
+  z-index: 1;
+}
+
+.part__about {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.hero__photo {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  bottom: -3px;
+  left: 545px;
 }
 
 .product {
@@ -808,29 +969,24 @@ h1, h2, h3, h4, h5, h6, p {
 .footer {
   background: #fff5f6;
   padding-top: 20px;
-  width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    width: 1200px;
-  }
 }
 .footer__container {
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 40px 20px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
     align-items: center;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    width: 1200px;
   }
 }
 .footer__slogan {
@@ -919,13 +1075,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact-info {
-  margin-bottom: 40px;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .contact-info {
-    margin-bottom: 0;
-  }
 }
 .contact-info__tel {
   display: flex;
