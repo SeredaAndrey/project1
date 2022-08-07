@@ -27,6 +27,13 @@ h2 {
 
 li {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -158,6 +165,10 @@ a {
   }
 }
 .header__burger {
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  z-index: 150;
   background-color: transparent;
   border: 0;
   margin-left: auto;
@@ -167,13 +178,12 @@ a {
 }
 .header__burger-icomenu {
   width: 20px;
-  height: 12px;
+  height: 14px;
 }
 .header__burger-icoclose {
   width: 14px;
   height: 14px;
   display: none;
-  z-index: 150;
 }
 .header__burger.is-open .header__burger-icoclose {
   display: block;
@@ -197,18 +207,30 @@ a {
 
 @media screen and (max-width: 768px) {
   .header__menu-container {
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 0;
     right: 0;
     width: 250px;
-    height: 100%;
-    background-color: #ffb8ca;
+    height: 502px;
+    background-color: #e17992;
     z-index: 100;
     display: none;
-    overflow-y: scroll;
+    transform: translateX(80%);
+    opacity: 50;
   }
+}
+@media screen and (max-width: 768px) and (min-width: 768px) {
+  .header__menu-container {
+    width: 254px;
+    height: 1020px;
+  }
+}
+@media screen and (max-width: 768px) {
   .header__menu-container.is-open {
     display: block;
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1), transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -312,8 +334,90 @@ a {
   z-index: -1;
 }
 
+.product {
+  padding: 60px 20px;
+}
+.product__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_list {
+  padding: 0;
+}
+
+.product_main-title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.product_title {
+  margin-top: 160px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.thumbb {
+  margin-top: 70px;
+  margin-bottom: 32px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.product_description {
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.product_item {
+  margin-top: 140px;
+  display: flex;
+  border-radius: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+.product_item.cream {
+  background-color: #ffb8ca;
+}
+.product_item.coffe {
+  background-color: #f0d1a5;
+}
+.product_item.coffe2 {
+  background-color: #c2e297;
+}
+
 .about {
-  background-color: #FFF5F6;
+  background-color: #fff5f6;
 }
 .about__container {
   max-width: 320px;
@@ -426,7 +530,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contact__conteiner-list {
   margin: 0 auto;
-  margin-bottom: 32px;
   width: 280px;
 }
 
@@ -436,12 +539,13 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 24px;
   padding: 40px;
   width: 280px;
+  height: 412px;
 }
 
 .contact__item-box {
   display: block;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
 }
 
@@ -494,7 +598,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contact__data-box {
   padding-bottom: 16px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
 }
 
@@ -539,6 +643,7 @@ h1, h2, h3, h4, h5, h6, p {
 .contact__box-button {
   display: block;
   text-align: center;
+  margin-top: 32px;
 }
 
 .contact__button {
@@ -599,7 +704,6 @@ h1, h2, h3, h4, h5, h6, p {
   .contact__conteiner-list {
     padding-left: 0;
     margin-left: 0;
-    margin-bottom: 60px;
     width: 768px;
   }
   .contact__list {
@@ -608,6 +712,7 @@ h1, h2, h3, h4, h5, h6, p {
   .contact__item {
     padding: 40px 32px;
     width: 224px;
+    height: 528px;
   }
   .contact__item:not(:last-child) {
     margin-bottom: 0;
@@ -616,6 +721,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 32px;
   }
   .contact__box-button {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
   }
@@ -683,6 +789,7 @@ h1, h2, h3, h4, h5, h6, p {
   .contact__item {
     width: 368px;
     padding: 40px;
+    height: 538px;
   }
   .contact__margin-box {
     margin-bottom: 8px;
@@ -691,4 +798,143 @@ h1, h2, h3, h4, h5, h6, p {
     width: 198px;
     height: 44px;
   }
+  .contact__list {
+    width: 1168px;
+  }
+  .contact__conteiner-list {
+    width: 1168px;
+  }
+}
+.footer {
+  background: #FFF5F6;
+  padding-top: 20px;
+}
+.footer__container {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+  }
+}
+.footer__slogan {
+  max-width: 232px;
+  margin-bottom: 40px;
+}
+.footer__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer__title {
+    display: flex;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+.footer__subtitle {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+@media screen and (min-width: 768px) {
+  .footer__subtitle {
+    display: flex;
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.social-media__list {
+  display: flex;
+}
+.social-media__item:not(:last-child) {
+  margin-right: 28px;
+}
+.social-media__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: #FEA5BB;
+  border-radius: 50%;
+}
+.social-media__link:hover, .social-media__link:focus {
+  background-color: #D41443;
+}
+.social-media__icon {
+  fill: white;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+.contact-info__tel {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  color: #D41443;
+}
+.contact-info__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 16px 20px 3px 20px;
+  color: #907E82;
+  border-top: 1px solid #907E82;
+}
+.copyright__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #907E82;
+}
+
+.copyright::before {
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translateY(32px);
+  width: 100%;
+  height: 1px;
+  color: #E1E1E1;
 }/*# sourceMappingURL=index.css.map */
