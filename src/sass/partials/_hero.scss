@@ -47,7 +47,7 @@
 }
 
 .hero__name {
-    font-family: 'Titan One';
+    font-family: Titan One;
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -81,7 +81,7 @@
 }
 
 .hero__btn {
-    font-family: 'DM Sans';
+    font-family: DM Sans;
     flex-direction: row;
     height: 24px;
     width: 82px;
@@ -103,7 +103,7 @@
 }
 
 .btn--clr {
-    color: #fff;
+    color:$color-secondary-text-contrast-product;
     background-color: $color-secondary-text-contrast-cont;
     margin-right: 8px;
     width: 62px;
@@ -165,7 +165,7 @@
 }
 
 .part__desc {
-    font-family: 'DM Sans';
+    font-family: DM Sans;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
@@ -206,7 +206,7 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: $color-secondary-text-contrast-product;
         z-index: -1;
     }
     
@@ -222,13 +222,13 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background-color: #fff;
+            background-color:$color-secondary-text-contrast-product;
             z-index: -1;
         }
 }
 
 .cafe__numbers {
-    font-family: 'Titan One';
+    font-family: Titan One;
     font-size: 28px;
     font-weight: 400;
     color: $color-secondary-text-contrast-cont;
@@ -237,7 +237,7 @@
 }
 
 .part__about {
-    font-family: 'DM Sans';
+    font-family: DM Sans;
         font-weight: 400;
         font-size: 8px;
         line-height: 1.5;
