@@ -1,4 +1,502 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body.menu-open {
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 90.5%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+h2 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  height: 44px;
+  width: 160px;
+  border: 0;
+  border-radius: 22px;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "DM Sans";
+  font-style: normal;
+  color: #d41443;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
+.button:hover, .button:focus {
+  background-color: #ecebeb;
+}
+.button__ico {
+  transform: translateY(2px);
+  stroke: #d41443;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  stroke: #ffffff;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  background-color: #ffb8ca;
+  min-height: 36px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    width: 320px;
+    padding: 8px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    width: 768px;
+    padding: 32px 32px 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo--margin {
+    margin-right: 128px;
+  }
+}
+.header__nav {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: block;
+  }
+}
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__item:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover, .header__link:focus {
+  color: #d41443;
+}
+@media screen and (max-width: 768px) {
+  .header--invisible {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header--margin {
+    margin-left: auto;
+  }
+}
+.header__burger {
+  background-color: transparent;
+  border: 0;
+  margin-left: auto;
+  cursor: pointer;
+  stroke: #ffffff;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__burger-icomenu {
+  width: 20px;
+  height: 12px;
+}
+.header__burger-icoclose {
+  width: 14px;
+  height: 14px;
+  display: none;
+}
+.header__burger.is-open .header__burger-icoclose {
+  display: block;
+}
+.header__burger.is-open .header__burger-icomenu {
+  display: none;
+}
+.header__burger:hover, .header__burger:focus {
+  stroke: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .header__burger {
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.hero {
+  margin: 0 auto;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  background-color: #ffb8ca;
+  width: 100%;
+  height: 443px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-left: 16px;
+  }
+}
+
+.hero__position {
+  position: absolute;
+  top: 136px;
+  z-index: 15;
+}
+
+.hero__name {
+  font-family: "Titan One";
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin: 0;
+  width: 218px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero__name {
+    line-height: 1.1;
+    font-size: 22px;
+    width: 162px;
+  }
+}
+
+.hero__name--color {
+  font-size: 48px;
+  color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .hero__name--color {
+    line-height: 1.1;
+    font-size: 34px;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero__btn {
+  font-family: "DM Sans";
+  flex-direction: row;
+  height: 24px;
+  width: 82px;
+  font-size: 8px;
+  line-height: 1.3;
+  color: #d41443;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #ecebeb;
+}
+
+.btn--clr {
+  color: #fff;
+  background-color: #d41443;
+  margin-right: 8px;
+  width: 62px;
+}
+.btn--clr:hover, .btn--clr:focus {
+  color: #d41443;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  width: 171px;
+  height: 410px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    bottom: 0;
+    left: 40%;
+    width: 143px;
+    height: 336px;
+  }
+}
+.hero__img ::before {
+  position: absolute;
+  display: block;
+  bottom: 80px;
+  left: -70px;
+  content: " ";
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .hero__img ::before {
+    bottom: 45px;
+    left: -65px;
+  }
+}
+
+.hero__part {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  z-index: 15;
+}
+@media screen and (max-width: 767px) {
+  .hero__part {
+    display: none;
+  }
+}
+
+.part__desc {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 114px;
+  height: 48px;
+}
+
+.hero__side {
+  position: absolute;
+  top: 67%;
+  left: 71%;
+}
+
+.hero__cafe {
+  position: absolute;
+  left: 140px;
+  bottom: 90px;
+}
+
+.hero__food {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.hero__food ::before {
+  position: absolute;
+  display: block;
+  bottom: 87px;
+  left: 22px;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.cafe__numbers {
+  font-family: "Titan One";
+  font-size: 28px;
+  font-weight: 400;
+  color: #d41443;
+  display: block;
+}
+
+.hero__photo {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  bottom: -3px;
+  left: 545px;
+}
+
+.about__container {
+  width: 100%;
+  padding: 60px 20px 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF5F6;
+}
+
+.section-subtitle {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.section-title {
+  margin-top: 15px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about__desc {
+  margin: 40px 0 20px 0;
+  padding: 0;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/about/about-bg-pic_s.png);
+}
+
+.about__desc-item {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #907e82;
+}
+.about__desc-item--bold {
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.button--mode-light {
+  align-items: center;
+  text-align: center;
+  border: none;
+  font-family: inherit;
+  min-width: 176px;
+  min-height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+}
+
+.button-text {
+  padding: 37px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+}
+
+.button:hover,
+.button:focus {
+  background: #ecebeb;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
