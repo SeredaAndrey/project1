@@ -824,8 +824,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer__container {
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 40px 20px;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
@@ -919,13 +918,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact-info {
-  margin-bottom: 40px;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .contact-info {
-    margin-bottom: 0;
-  }
 }
 .contact-info__tel {
   display: flex;

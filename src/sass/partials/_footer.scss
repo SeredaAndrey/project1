@@ -17,8 +17,7 @@
     &__container {
         display: block;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px 40px 20px;
 
         @media screen and (min-width: 768px) {
             display: flex;
@@ -134,12 +133,7 @@
 }
 
 .contact-info {
-    margin-bottom: 40px;
     margin-left: auto;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-    }
 
     &__tel {
         display: flex;
