@@ -34,6 +34,29 @@
       display: block;
       //   padding: 37px 16px 0 16px;
     }
+    &.is-open {
+      display: block;
+      position: absolute;
+      z-index: 150;
+      top: 136px;
+      right: 128;
+      //   transform: translateX(-100%);
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.29;
+
+      .header__item {
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+
+      @media screen and (min-width: $desktop) {
+        right: 132px;
+        // transform: translateY(-100%);
+      }
+    }
   }
   &__list {
     margin: 0;
@@ -68,44 +91,59 @@
       color: $color-primary-hover;
     }
   }
-  &--invisible {
-    @media screen and (max-width: $tablet) {
-      display: none;
-    }
-  }
-  //   &.header__burger.is-open {
-  //     .header--invisible {
-  //       display: block;
-  //       position: absolute;
-  //       z-index: 150;
-  //       top: 60px;
-  //       right: 21px;
-  //     }
-  //   }
-  &--margin {
+  &--modificator {
     position: absolute;
-    right: 32px;
-    top: 32px;
+
+    display: none;
+    right: 20px;
+    top: 40px;
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      display: block;
+      right: 32px;
+      top: 32px;
+    }
     @media screen and (min-width: $desktop) {
-      margin-left: auto;
+      position: absolute;
+      display: block;
+      right: 20px;
+      top: 40px;
+    }
+    &.is-open {
+      display: block;
+      z-index: 150;
+      top: 60px;
+      right: 21px;
+      width: 209px;
+      height: 44px;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      @media screen and (min-width: $tablet) {
+        right: 34px;
+        top: 58px;
+        width: 186px;
+      }
     }
   }
   &__burger {
+    display: block;
     position: absolute;
     right: 20px;
     top: 27px;
     z-index: 150;
+    width: 20px;
+    height: 20px;
     @media screen and (min-width: $tablet) {
       top: 46px;
       right: 224px;
     }
     &-icomenu {
-      //   border: 1px solid black;
       width: 20px;
       height: 14px;
     }
     &-icoclose {
-      //   border: 1px solid black;
       width: 14px;
       height: 14px;
 
@@ -118,6 +156,12 @@
       .header__burger-icomenu {
         display: none;
       }
+      //   .header__burger {
+      //     @media screen and (min-width: $tablet) {
+      //       top: 20px;
+      //       right: 32px;
+      //     }
+      //   }
     }
     background-color: transparent;
     border: 0;
