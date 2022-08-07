@@ -83,6 +83,9 @@
   //     }
   //   }
   &--margin {
+    position: absolute;
+    right: 32px;
+    top: 32px;
     @media screen and (min-width: $desktop) {
       margin-left: auto;
     }
@@ -92,6 +95,10 @@
     right: 20px;
     top: 27px;
     z-index: 150;
+    @media screen and (min-width: $tablet) {
+      top: 46px;
+      right: 224px;
+    }
     &-icomenu {
       //   border: 1px solid black;
       width: 20px;
