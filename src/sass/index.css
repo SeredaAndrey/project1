@@ -806,8 +806,21 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 .footer {
-  background: #FFF5F6;
+  background: #fff5f6;
   padding-top: 20px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 .footer__container {
   display: block;
