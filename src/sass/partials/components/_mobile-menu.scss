@@ -1,17 +1,25 @@
 .header__menu-container {
   @media screen and (max-width: $tablet) {
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 0;
     right: 0;
     width: 250px;
-    height: 100%;
-    // padding: 40px 48px;
-    background-color: $bgc-primary;
+    height: 502px;
+    @media screen and (min-width: $tablet) {
+      width: 254px;
+      height: 1020px;
+    }
+    background-color: $bgc-menu;
     z-index: 100;
     display: none;
+    transform: translateX(80%);
+    opacity: 50;
     &.is-open {
       display: block;
+      transform: translate(0);
+      opacity: 1;
+      transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    overflow-y: scroll;
   }
 }
