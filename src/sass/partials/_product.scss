@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
+
 
 
     &__container {
-        max-width: 280px;
+        padding: 60px 20px;
+        max-width: 320px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -40,6 +41,7 @@
     text-transform: uppercase;
 
     color: #FFA5BA;
+
 }
 
 .product_title {
@@ -183,4 +185,112 @@
 
     color: $color-buttons;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@media screen and (min-width: $tablet) {
+
+    .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            &__container {
+                padding: 60px 32px;
+                max-width: 768px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            &_list {
+                display: flex;
+                gap: 16px;
+                
+                flex-basis: calc((100% - 32px) / 3);
+            }
+        }
+
+
+    .sub-title {
+        margin-bottom: 18px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFA5BA;
+    }
+
+    .product_main-title{
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 55px;
+        
+        
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #D41443;
+    }
+
+    .product_description {
+        line-height: 176%;
+    }
+
+    .thumbb {
+        position: relative;
+        padding: 0px 32px;
+    }
+
+        .cream::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,58%);
+    
+            background-image: url(../images/product/Product1.png);
+        }
+    
+        .coffe::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 58%);
+    
+            background-image: url(../images/product/Product2.png);
+        }
+    
+        .coffe2::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 58%);
+    
+            background-image: url(../images/product/Product3.png);
+        }
+
 }
