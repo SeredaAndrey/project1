@@ -141,6 +141,10 @@
     @media screen and (min-width: $tablet) {
       top: 46px;
       right: 224px;
+      &.is-open {
+        top: 20px;
+        right: 32px;
+      }
     }
     &-icomenu {
       width: 20px;
@@ -178,9 +182,9 @@
     &:focus {
       stroke: $color-primary-hover;
     }
-    @media screen and (min-width: $tablet) {
-      margin-right: 32px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //   margin-right: 32px;
+    // }
     @media screen and (min-width: $desktop) {
       display: none;
     }
