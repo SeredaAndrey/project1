@@ -1,11 +1,11 @@
 .about {
-    background-color: $bgc-secondary;
-
     &__container {
             max-width: 320px;
             padding: 60px 20px 40px 20px;
             margin-left: auto;
             margin-right: auto;
+
+            background-color: $bgc-secondary;
 
             background-repeat: no-repeat;
             background-position: 0 576px;
@@ -16,21 +16,66 @@
             
                 background-image: url(../images/about/about-bg-pic_s@2x.png);
                 // background-image: url(../images/about/about-bg-pic_s@3x.png);
+                }
+
+                @media screen and (min-width: $tablet) {
+                    max-width: $tablet;
+                    padding: 60px 32px 60px 32px;
+                    background-image: none;
+                }
+                @media screen and (min-width: $desktop) {
+                    width: $desktop;
+                }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 280px;
+
+        @media screen and (min-width: $tablet) {
+                max-width: 336px;
+            }
+        
+        @media screen and (min-width: $desktop) {
+            max-width: 501px;
             }
 
-        }
+    }
+
+    &__elements {
+        display: block;
+
+        @media screen and (min-width: $tablet) {
+                margin-left: 32px;
+                margin-right: 0;
+            }
+    }
 
     &__desc {
             margin: 40px 0 20px 0;
             padding: 0;
             list-style: none;
+
+            @media screen and (min-width: $tablet) {
+                margin: 0 0 40px 0;
+            }
         }
     &__desc-item {
-            max-width: 220px;
+            // max-width: 220px;
             font-weight: 500;
             font-size: 12px;
             line-height: 1.6;
             color: $color-secondary-text-contrast;
+
+            @media screen and (min-width: $tablet) {
+                        font-size: 14px;
+                        max-width: 334px;
+                    }
 
             &:last-child {
                 margin-top: 10px;
@@ -41,7 +86,6 @@
                 margin-bottom: 25px;
             }
         }
-            
 }
 .section-subtitle {
     display: block;
@@ -55,6 +99,10 @@
     text-transform: uppercase;
     
     color: $color-secondary-descr;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 26px;
+    }
 }
 .section-title {
     margin-top: 15px;
@@ -68,6 +116,11 @@
     text-transform: uppercase;
 
     color: $color-secondary-title;
+
+        @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
 }
 img {
     display: block;
