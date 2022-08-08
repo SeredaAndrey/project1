@@ -1,6 +1,7 @@
 .header-hero {
   &__container {
     width: $mobile;
+    height: 502px;
     margin: 0 auto;
     padding: 0;
     @media screen and (max-width: $tablet) {
@@ -8,6 +9,7 @@
     }
     @media screen and (min-width: $tablet) {
       width: $tablet;
+      height: 416px;
     }
     @media screen and (min-width: $desktop) {
       width: $desktop;
