@@ -257,9 +257,13 @@
 .hero__photo {
     position: absolute;
     display: block;
-    width: 100%;
+    width: 190px;
     height: auto;
     z-index: 1;
     bottom: 0px;
     left: 545px;
+
+    @media screen and (min-width:768px) {
+        width: 304px;
+    }
 }
