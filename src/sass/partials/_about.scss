@@ -6,17 +6,24 @@
             padding: 60px 20px 40px 20px;
             margin-left: auto;
             margin-right: auto;
+
+            background-repeat: no-repeat;
+            background-position: 0 576px;
+            background-size: contain;
+            background-image: url(../images/about/about-bg-pic_s.png);
+
+                @media only screen and (-webkit-min-device-pixel-ratio: 1.25) {
+            
+                background-image: url(../images/about/about-bg-pic_s@2x.png);
+                // background-image: url(../images/about/about-bg-pic_s@3x.png);
+            }
+
         }
 
     &__desc {
             margin: 40px 0 20px 0;
             padding: 0;
             list-style: none;
-    
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            background-image: url(../images/about/about-bg-pic_s.png);
         }
     &__desc-item {
             max-width: 220px;
@@ -24,6 +31,10 @@
             font-size: 12px;
             line-height: 1.6;
             color: $color-secondary-text-contrast;
+
+            &:last-child {
+                margin-top: 10px;
+            }
     
             &--bold {
                 color: $color-secondary-text;
