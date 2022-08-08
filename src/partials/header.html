@@ -1,9 +1,18 @@
 <header class="header">
   <div class="header__container">
     <div class="header__logo header__logo--margin">
-      <a class="header__link" href=""
-        ><img src="./images/header/logo.png" alt="ice cream"
-      /></a>
+      <a class="header__link" href=""></a>
+        <picture>
+          <source
+            media=""
+            srcset="./images/header/logo.png 1x, 
+            ./images/header/logo2x.png 2x,
+            ./images/header/logo3x.png 3x"
+            type="image/png"
+          />
+          <img src="./images/header/logo.png" alt="ice cream" />
+        </picture>
+      </a>
     </div>
 
     <div
