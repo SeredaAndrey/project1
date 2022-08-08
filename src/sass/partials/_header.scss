@@ -47,8 +47,35 @@
       line-height: 1.29;
 
       .header__item {
+        position: relative;
         &:not(:last-child) {
           margin-bottom: 22px;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          height: 1px;
+          width: 250px;
+          @media screen and (min-width: $tablet) {
+            width: 254px;
+          }
+          right: -128;
+          top: -13px;
+          background-color: $color-contur-menu;
+        }
+        &:last-child {
+          &::before {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 250px;
+            @media screen and (min-width: $tablet) {
+              width: 254px;
+            }
+            right: -128;
+            top: 29px;
+            background-color: $color-contur-menu;
+          }
         }
       }
 
