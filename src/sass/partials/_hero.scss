@@ -36,6 +36,7 @@
         padding-left: 16px;
         padding-right: 16px;
         overflow: visible;
+        height: 582px;
     }
 }
 
@@ -46,6 +47,10 @@
 
     @media screen and (min-width:768px) {
         top: 20px;
+
+        @media screen and (min-width:1200px) {
+            top: 63px;
+        }
     }
 }
 
@@ -66,6 +71,12 @@
         font-size: 22px;
         width: 162px;
     }
+
+    @media screen and (min-width:1200px) {
+        line-height: 1.2;
+        font-size: 38px;
+        width: 277px;
+    }
 }
 
 .hero__name--color {
@@ -75,6 +86,11 @@
     @media screen and (min-width:768px) {
         line-height: 1.1;
         font-size: 34px;
+    }
+
+    @media screen and (min-width:1200px) {
+        line-height: 0.9;
+        font-size: 58px;
     }
 }
 
@@ -103,6 +119,13 @@
         background-color: $bgc-buttons-hover;
     }
 
+        @media screen and (min-width:1200px) {
+            margin-right: 12px;
+            width: 138px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 1.3;
+        }
 }
 
 .btn--clr {
@@ -115,6 +138,11 @@
     &:focus {
         color: $color-secondary-text-contrast-cont;
     }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 12px;
+            width: 107px;
+        }
 }
 
 .hero__img {
@@ -133,6 +161,13 @@
         left: 40%;
         width: 143px;
         height: 336px;
+
+        @media screen and (min-width:1200px) {
+                bottom: 0;
+                left: 52%;
+                width: 236px;
+                height: 557px;
+            }
     }
 
     ::before {
@@ -153,6 +188,13 @@
             width: 335px;
             height: 333px;
         }
+
+        @media screen and (min-width:1200px) {
+            bottom: 77px;
+            left: -125px;
+            width: 534px;
+            height: 534px;
+        }
     }
 
 }
@@ -167,6 +209,10 @@
     @media screen and (max-width:767px) {
         display: none;
     }
+
+        @media screen and (min-width:1200px) {
+            bottom: 60px;
+        }
 }
 
 .part__desc {
@@ -177,6 +223,26 @@
     color: $color-secondary-text-contrast-product;
     width: 114px;
     height: 48px;
+
+    @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.4;
+            width: 200px;
+            height: 78px;
+        }
+}
+
+.hero__button--wrap {
+    height: 26px;
+    width: 26px;
+    border: none;
+    border-radius: 50%;
+    background-color: $bgc-buttons;
+    background-image: url(../images/hero/arrow-right.png);
+    font-family: 'DM Sans';
+    font-style: normal;
+    color: $color-buttons;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__side {
@@ -188,6 +254,11 @@
 
     @media screen and (min-width:320px) and (max-width:767px) {
         display: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 75px;
+        padding-right: 16px;
     }
 }
 
@@ -204,6 +275,10 @@
     width: 50px;
     height: 50px;
 
+    @media screen and (min-width:1200px) {
+        width: 74px;
+        height: 76px;
+    }
 }
 
 .hero--position {
@@ -218,8 +293,14 @@
         border-radius: 50%;
         background-color: $color-secondary-text-contrast-product;
         z-index: -1;
-    }
 
+        @media screen and (min-width: 1200px) {
+            width: 30px;
+            height: 30px;
+            top: 73px;
+            right: -15px;
+        }
+    }
 }
 
 .hero--pstn {
@@ -234,6 +315,18 @@
         border-radius: 50%;
         background-color: $color-secondary-text-contrast-product;
         z-index: -1;
+
+        @media screen and (min-width: 1200px) {
+                width: 30px;
+                height: 30px;
+                top: -10px;
+                right: -15px;
+                
+            }
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 10px;
     }
 }
 
@@ -244,6 +337,10 @@
     color: $color-secondary-text-contrast-cont;
     display: block;
     z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+           font-size: 38px;
+        }
 }
 
 .part__about {
@@ -252,18 +349,25 @@
     font-size: 8px;
     line-height: 1.5;
     color: $color-secondary-text-contrast-product;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }
 
 .hero__photo {
     position: absolute;
     display: block;
-    width: 190px;
+
+    width: 193px;
     height: auto;
     z-index: 1;
     bottom: 0px;
-    left: 545px;
+    right: 32px;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
         width: 304px;
+        right: 16px;
+
     }
 }
