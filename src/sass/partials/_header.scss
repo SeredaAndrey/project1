@@ -32,7 +32,10 @@
     display: none;
     @media screen and (min-width: $desktop) {
       display: block;
-      //   padding: 37px 16px 0 16px;
+      position: absolute;
+      top: 52px;
+      left: 363px;
+      z-index: 20;
     }
     &.is-open {
       display: block;
@@ -135,6 +138,7 @@
       display: block;
       right: 20px;
       top: 40px;
+      z-index: 20;
     }
     &.is-open {
       display: block;
