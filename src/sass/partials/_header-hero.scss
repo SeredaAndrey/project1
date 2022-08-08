@@ -1,0 +1,16 @@
+.header-hero {
+  &__container {
+    width: $mobile;
+    margin: 0 auto;
+    padding: 0;
+    @media screen and (max-width: $tablet) {
+      width: $mobile;
+    }
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
+}
