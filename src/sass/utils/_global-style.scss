@@ -1,6 +1,8 @@
 body {
   &.menu-open {
-    overflow: hidden;
+    @media screen and (max-width: $desktop) {
+      overflow: hidden;
+    }
   }
 }
 h1 {

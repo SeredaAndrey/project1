@@ -38,6 +38,14 @@
       z-index: 20;
     }
     &.is-open {
+      @media screen and (min-width: $desktop) {
+        display: block;
+        position: absolute;
+        top: 52px;
+        left: 363px;
+        z-index: 20;
+      }
+
       display: block;
       position: absolute;
       z-index: 150;
@@ -54,20 +62,8 @@
         &:not(:last-child) {
           margin-bottom: 22px;
         }
-        &::after {
-          position: absolute;
-          content: '';
-          height: 1px;
-          width: 250px;
-          @media screen and (min-width: $tablet) {
-            width: 254px;
-          }
-          right: -128;
-          top: -13px;
-          background-color: $color-contur-menu;
-        }
-        &:last-child {
-          &::before {
+        @media screen and (max-width: $desktop) {
+          &::after {
             position: absolute;
             content: '';
             height: 1px;
@@ -76,8 +72,25 @@
               width: 254px;
             }
             right: -128;
-            top: 29px;
+            top: -13px;
             background-color: $color-contur-menu;
+          }
+        }
+
+        @media screen and (max-width: $desktop) {
+          &:last-child {
+            &::before {
+              position: absolute;
+              content: '';
+              height: 1px;
+              width: 250px;
+              @media screen and (min-width: $tablet) {
+                width: 254px;
+              }
+              right: -128;
+              top: 29px;
+              background-color: $color-contur-menu;
+            }
           }
         }
       }
@@ -155,6 +168,13 @@
         right: 34px;
         top: 58px;
         width: 186px;
+      }
+      @media screen and (min-width: $desktop) {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 40px;
+        z-index: 20;
       }
     }
   }
