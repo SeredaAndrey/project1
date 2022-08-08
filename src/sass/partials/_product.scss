@@ -248,4 +248,49 @@
         padding: 0px 32px;
     }
 
+        .cream::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,58%);
+    
+            background-image: url(../images/product/Product1.png);
+        }
+    
+        .coffe::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 58%);
+    
+            background-image: url(../images/product/Product2.png);
+        }
+    
+        .coffe2::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            background-size: cover;
+    
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, 58%);
+    
+            background-image: url(../images/product/Product3.png);
+        }
+
 }
