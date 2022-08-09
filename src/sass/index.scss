@@ -1,9 +1,15 @@
 @import './common';
 
-@import "./utils/breakpoints";
-@import "./utils/vars";
+@import './utils/breakpoints';
+@import './utils/vars';
+@import './utils/global-style';
+@import './partials/components/button';
+
+@import './partials/header-hero';
 
 @import './partials/header';
+
+@import './partials/components/mobile-menu';
 
 @import './partials/hero';
 

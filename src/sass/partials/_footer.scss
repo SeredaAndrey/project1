@@ -1,0 +1,219 @@
+.footer {
+    background: #fff5f6;
+    width: 320px;
+
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-top: 0px;
+    }
+
+    &__hidden-title {
+        display: none;
+    }
+
+    &__container {
+        display: block;
+
+        padding: 0 20px 40px 20px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__slogan {
+        max-width: 232px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 340px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 480px;
+        }
+    }
+
+    &__title {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFA5BA;
+
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 34px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 39px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+
+        color: #D41443;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+
+            margin-bottom: 0;
+
+            font-size: 58px;
+            line-height: 66px;
+            letter-spacing: 0.06em;
+        }
+
+        @media screen and (min-width: 1200px) {
+
+        }
+
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-left: auto;
+    margin-bottom: 40px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 28px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 34px;
+        height: 34px;
+
+        background-color: #FEA5BB;
+        border-radius: 50%;
+        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: #D41443;
+    }
+
+    &__icon {
+        fill: #ffff;
+    }
+}
+
+.contact-info {
+    margin-left: auto;
+
+    &__tel {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 22px;
+    
+        color: #D41443;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    &__text {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 22px;
+        color: #000000;
+
+        margin-right: 3px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 26px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 30px;
+            }
+    }
+}
+
+.copyright {
+    padding: 16px 20px 3px 20px;
+
+    border-top: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+        padding: 8px 20px;
+    }
+
+    &__text {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+
+        text-align: center;
+
+        color: #907E82;
+
+        @media screen and (min-width: 768px) {
+            line-height: 26px;
+        }
+    }
+
+}

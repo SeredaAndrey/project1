@@ -1,0 +1,51 @@
+.button {
+  height: 44px;
+  width: 160px;
+
+  border: 0;
+  border-radius: 22px;
+
+  margin: 0;
+
+  background-color: $bgc-buttons;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+
+  color: $color-buttons;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: $tablet) {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: $tablet) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bgc-buttons-hover;
+  }
+
+  cursor: pointer;
+
+  &__ico {
+    transform: translateY(2px);
+    stroke: $color-primary-hover;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover,
+  &:focus {
+    stroke: $color-primary;
+  }
+}

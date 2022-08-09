@@ -1,15 +1,72 @@
 <header class="header">
   <div class="header__container">
-    <img src="./images/header/logo.png" alt="ice cream" />
-    <nav class="header__nav">
+    <div class="header__logo header__logo--margin">
+      <a class="header__link" href=""></a>
+        <picture>
+          <source
+            media=""
+            srcset="./images/header/logo.png 1x, 
+            ./images/header/logo2x.png 2x,
+            ./images/header/logo3x.png 3x"
+            type="image/png"
+          />
+          <img src="./images/header/logo.png" alt="ice cream" />
+        </picture>
+      </a>
+    </div>
+
+    <div
+      class="header__menu-container"
+      id="header__menu-container"
+      data-menu
+    ></div>
+
+    <nav class="header__nav" data-menu-nav>
       <ul class="header__list">
-        <li class="header__item">Home</li>
-        <li class="header__item">About us</li>
-        <li class="header__item">How it’s made?</li>
-        <li class="header__item">Our products</li>
-        <li class="header__item">Contact</li>
+        <li class="header__item">
+          <a class="header__link" href="">Home</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">About us</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">Our products</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button class="button" type="button">Buy now</button>
+    <button
+      type="button"
+      class="header__burger"
+      aria-expanded="false"
+      aria-controls="header__menu-container"
+      data-menu-button
+    >
+      <svg width="20" height="20" aria-label="переключатель мобильного меню">
+        <use
+          class="header__burger-icomenu"
+          width="20"
+          height="14"
+          href="./images/icons.svg#icon-Burger"
+        ></use>
+        <use
+          class="header__burger-icoclose"
+          width="14"
+          height="14"
+          href="./images/icons.svg#icon-close"
+        ></use>
+      </svg>
+    </button>
+    <button class="button header--modificator" type="button" data-menu-purchase>
+      Buy now
+      <svg class="button__ico" width="12" height="12">
+        <use href="./images/icons.svg#icon-strelka1"></use>
+      </svg>
+    </button>
   </div>
 </header>

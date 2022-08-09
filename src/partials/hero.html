@@ -1,7 +1,130 @@
 <section class="hero">
   <div class="hero__container">
-    <h1 class="hero__name">
-      ice cream made with <span class="hero__name--color">passion</span>
-    </h1>
+    <div class="hero__position">
+      <h1 id="hero" class="hero__name">
+        ice cream made with <span class="hero__name--color">passion</span>
+      </h1>
+      <div class="hero__buttons">
+        <button type="button" class="hero__btn btn--clr">
+          <a href="#products" class="hero--id-product">Products</a>
+        </button>
+        <button type="button" class="hero__btn">
+          <a href="#about" class="hero--id-about">How it’s made?</a>
+        </button>
+      </div>
+    </div>
+    <div class="hero__img">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/ice-cream-l.png     1x,
+            ./images/hero/ice-cream-@2x-l.png 2x,
+            ./images/hero/ice-cream-@3x-l.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/ice-cream-m.png     1x,
+            ./images/hero/ice-cream-@2x-m.png 2x,
+            ./images/hero/ice-cream-@3x-m.png 3x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(min-width: 320px)"
+          srcset="
+            ./images/hero/ice-cream-s.png     1x,
+            ./images/hero/ice-cream-@2x-s.png 2x,
+            ./images/hero/ice-cream-@3x-s.png 3x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/ice-cream-s.png"
+          alt="ice-cream"
+          width=" "
+          height=" "
+        />
+      </picture>
+    </div>
+    <div class="hero__part">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/big-eco-l.png     1x,
+            ./images/hero/big-eco-@2x-l.png 2x,
+            ./images/hero/big-eco-@3x-l.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/big-eco-m.png     1x,
+            ./images/hero/big-eco-@2x-m.png 2x,
+            ./images/hero/big-eco-@3x-m.png 3x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/big-eco-m.png"
+          alt="big eco"
+          width=" "
+          height=" "
+        />
+      </picture>
+      <div class="hero__element">
+        <p class="part__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="hero__button--wrap"></button>
+      </div>
+    </div>
+    <div class="hero__side">
+      <div class="hero__cafe">
+        <div class="hero__food hero--pstn">
+          <div class="cafe__numbers">16</div>
+          <span class="part__about">cafes</span>
+        </div>
+        <div class="hero__food hero--position">
+          <div class="cafe__numbers">23</div>
+          <span class="part__about">food trucks</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/so-tasty-l.png     1x,
+            ./images/hero/so-tasty-@2x-l.png 2x,
+            ./images/hero/so-tasty-@3x-l.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/so-tasty-m.png     1x,
+            ./images/hero/so-tasty-@2x-m.png 2x,
+            ./images/hero/so-tasty-@3x-m.png 3x
+          "
+          type="image/png"
+        />
+        <img
+          src="./images/hero/so-tasty-m.png"
+          alt="big eco"
+          width=" "
+          height=" "
+        />
+      </picture>
+    </div>
   </div>
 </section>

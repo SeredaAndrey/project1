@@ -14,15 +14,22 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/product.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer.html"></include>
-    <include src="./partials/contacts.html"></include>
+    <section class="header-hero">
+      <div class="header-hero__container">
+        <include src="./partials/header.html"></include>
+        <include src="./partials/hero.html"></include>
+      </div>
+    </section>
+    <main>
+      <include src="./partials/product.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -32,5 +39,6 @@
     ></script>
 
     <script src="./index.js"></script>
+
   </body>
 </html>

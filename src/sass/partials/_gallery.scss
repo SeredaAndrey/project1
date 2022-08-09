@@ -1,0 +1,207 @@
+.gallery{
+    padding:0;
+    margin:0;
+
+    
+}
+.gallery__container{
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 320px) {
+		max-width: 320px;
+		background-image: linear-gradient(180deg, rgba(255,245,246,1) 20%, rgba(255,255,255,1) 20%); 
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+        background-image: linear-gradient(180deg, rgba(255,245,246,1) 43%, rgba(255,255,255,1) 43%);
+	}
+
+	@media screen and (min-width: 1200px) {
+        padding-left: 92px;
+        padding-right: 92px;
+		max-width: 1200px;
+        background-image: linear-gradient(180deg, rgba(255,245,246,1) 28%, rgba(255,255,255,1) 28%); 
+}
+}
+.gallery__image{
+    display:block;
+    @media screen and (min-width: 320px) {
+		width: 43px;
+        height: 44px; 
+        object-fit: fill;
+        border-radius: 8px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 104px;
+        height: 105px;
+        object-fit: fill;
+        border-radius: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+        width: 138px;
+        height: 139px;
+        object-fit: fill;
+        border-radius: 20px; 
+} 
+}
+.gallery__image__big{
+    display:block;
+    @media screen and (min-width: 320px) {
+		width: 89px;
+        height: 90px; 
+        object-fit: fill;
+        border-radius: 8px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 214px;
+        height: 215px;;
+        object-fit: fill;
+        border-radius: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+        width: 283px;
+        height: 284px;
+        object-fit: fill;
+        border-radius: 20px; 
+} 
+}
+
+
+.gallery__grid{
+    
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-items: center;
+align-content:center;
+gap:3px;
+
+@media screen and (max-width: 767px) {
+    gap:6px;
+}
+@media screen and (min-width: 1200px) {
+    gap:8px;
+}
+
+}
+.gallery__item{
+display: flex;
+} 
+
+.gallery__item--position1{
+    position: relative;
+    left: 0;
+    top: calc(54px * 0.31);
+    
+    z-index: 10000;
+   
+	@media screen and (min-width: 768px) {
+		top: calc(54px * 0.75);
+	}
+    @media screen and (min-width: 1200px) {
+		top: 54px;
+	}
+
+}
+.gallery__item--position4{
+    position: relative;
+    left: 0;
+    
+    top: calc(10px * 0.31);
+    z-index: 10000;
+    
+	@media screen and (min-width: 768px) {
+		top: calc(10px * 0.75);
+}
+    @media screen and (min-width: 1200px) {
+        top: 10px;
+}
+}
+.gallery__item--position5{
+    position: relative;
+    left: 0;
+    bottom: calc(24px * 0.31);
+    
+    z-index: 10000;
+   
+	@media screen and (min-width: 768px) {
+		bottom: calc(24px * 0.75);
+    }
+    @media screen and (min-width: 1200px) {
+		bottom: 24px;
+	}
+}
+.gallery__item--position6{
+    position: relative;
+    left: 0;
+    top: calc(65px * 0.31);
+    
+    z-index: 10000;
+   
+	@media screen and (min-width: 768px) {
+		top: calc(65px * 0.75);
+    }
+    @media screen and (min-width: 1200px) {
+		top: 65px;
+	}
+}
+.gallery__item--position7{
+    position: relative;
+    left: 0;
+    bottom: calc(72px * 0.31);
+    z-index: 10000;
+    margin-left: calc(146px * 0.31) ;
+
+    @media screen and (min-width: 768px) {
+        bottom: calc(72px * 0.75);
+        margin-left: calc(146px * 0.75); 
+	}
+
+	@media screen and (min-width: 1200px){
+        bottom:72px;
+        margin-left:146px; 
+    }
+}
+.gallery__item--position9{
+    position: relative;
+    left: 0;
+    bottom: calc(62px * 0.31);
+    z-index: 10000;
+    margin-left: calc(146px * 0.31) ;
+    
+	@media screen and (min-width: 768px) {
+        bottom: calc(62px * 0.75);
+        margin-left: calc(146px * 0.75) ;
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: 62px;
+        margin-left: 146px;
+	}
+}
+.gallery__item--position10{
+    position: relative;
+    left: 0;
+    bottom: calc(96px * 0.31);
+    
+    z-index: 10000;
+
+	@media screen and (min-width: 768px) {
+        bottom: calc(96px * 0.75);
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: 96px;
+	}
+}
+
+.gallery__iten--position-absolut{
+    display: block;
+    position: relative;
+}
+
+
