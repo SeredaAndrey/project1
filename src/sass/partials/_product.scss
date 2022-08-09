@@ -1,8 +1,8 @@
 .product {
-    
+
     &__container {
         padding: 60px 20px;
-        max-width: 320px;
+        max-width: $mobile;
         margin-left: auto;
         margin-right: auto;
 
@@ -191,13 +191,10 @@
 @media screen and (min-width: $tablet) {
 
     .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         &__container {
             padding: 60px 32px;
-            max-width: 768px;
+            max-width: $tablet;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -231,6 +228,7 @@
 
     .product_main-title {
         margin-bottom: 20px;
+        margin-top: 0;
         font-weight: 400;
         font-size: 48px;
         line-height: 55px;
@@ -308,7 +306,7 @@
 
         &__container {
             padding: 60px 16px;
-            max-width: 1200px;
+            max-width: $desktop;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -332,6 +330,7 @@
     }
 
     .product_main-title {
+        margin-top: 0;
         font-size: 58px;
         line-height: 66px;
         letter-spacing: 0.06em;
