@@ -145,6 +145,14 @@
         }
 }
 
+.hero--id-product {
+    color:$color-secondary-text-contrast-product;
+}
+
+.hero--id-about {
+    color: $color-secondary-text-contrast-cont;
+}
+
 .hero__img {
     position: absolute;
     bottom: 0;
@@ -358,7 +366,6 @@
 .hero__photo {
     position: absolute;
     display: block;
-
     width: 193px;
     height: auto;
     z-index: 1;
@@ -369,5 +376,9 @@
         width: 304px;
         right: 16px;
 
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
     }
 }
