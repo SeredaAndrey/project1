@@ -1,4 +1,5 @@
 .about {
+
     &__container {
             max-width: 320px;
             padding: 60px 20px 40px 20px;
@@ -6,28 +7,34 @@
             margin-right: auto;
 
             background-color: $bgc-secondary;
-
-            background-repeat: no-repeat;
-            background-position: 0 576px;
-            background-size: contain;
-            background-image: url(../images/about/about-bg-pic_s.png);
-
-                @media only screen and (-webkit-min-device-pixel-ratio: 1.25) {
-            
-                background-image: url(../images/about/about-bg-pic_s@2x.png);
-                // background-image: url(../images/about/about-bg-pic_s@3x.png);
-                }
+                
 
                 @media screen and (min-width: $tablet) {
                     max-width: $tablet;
                     padding: 60px 32px 60px 32px;
-                    background-image: none;
                 }
                 @media screen and (min-width: $desktop) {
                     max-width: $desktop;
-                    padding: 60px 16px 60px 32px;
-                    background-image: url(../images/about/about-bg-pic_l.png);
+                    padding: 60px 16px 60px 16px;
+
+                    background-repeat: no-repeat;
+                    background-size: contain;
                     background-position: 0 200px;
+                    background-image: url(../images/about/about-bg-pic_l.png);
+
+                    @media only screen and (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                        background-image: url(../images/about/about-bg-pic_l@2x.png);
+                        }
+                    
+                        @media only screen and (min-device-pixel-ratio: 3),
+                        (-webkit-min-device-pixel-ratio: 3),
+                        (min-resolution: 288dpi),
+                        (min-resolution: 3dppx) {
+                        background-image: url(../images/about/about-bg-pic_l@3x.png);
+                        }
                 }
     }
 
@@ -35,6 +42,34 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
+
+            background-repeat: no-repeat;
+            background-position: 0 375px;
+            background-size: contain;
+            background-image: url(../images/about/about-bg-pic_s.png);
+        
+            @media only screen and (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/about/about-bg-pic_s@2x.png);
+            }
+        
+            @media only screen and (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(../images/about/about-bg-pic_s@3x.png);
+            }
+
+            @media screen and (min-width: $tablet) {
+                background-image: none;
+            }
+            
+            @media screen and (min-width: $desktop) {
+                background-image: none;
+            }     
     }
 
     &__img {
@@ -72,7 +107,7 @@
             }
         }
     &__desc-item {
-            // max-width: 220px;
+            max-width: 220px;
             font-weight: 500;
             font-size: 12px;
             line-height: 1.6;

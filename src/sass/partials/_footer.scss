@@ -52,7 +52,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
@@ -64,12 +64,12 @@
             display: flex;
 
             font-size: 26px;
-            line-height: 30px;
+            line-height: 1.15;
         }
 
         @media screen and (min-width: 1200px) {
             font-size: 30px;
-            line-height: 34px;
+            line-height: 1.13;
         }
     }
 
@@ -78,7 +78,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 34px;
-        line-height: 39px;
+        line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
@@ -92,7 +92,7 @@
             margin-bottom: 0;
 
             font-size: 58px;
-            line-height: 66px;
+            line-height: 1.14;
             letter-spacing: 0.06em;
         }
 
@@ -154,18 +154,18 @@
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 1.83;
     
         color: #D41443;
 
         @media screen and (min-width: 768px) {
             font-size: 14px;
-            line-height: 26px;
+            line-height: 1.86;
         }
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
-            line-height: 30px;
+            line-height: 1.88;
         }
     }
 
@@ -174,25 +174,31 @@
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 1.83;
         color: #000000;
 
         margin-right: 3px;
 
         @media screen and (min-width: 768px) {
             font-size: 14px;
-            line-height: 26px;
+            line-height: 1.86;
             }
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
-            line-height: 30px;
+            line-height: 1.88;
             }
     }
 }
 
 .copyright {
-    padding: 16px 20px 3px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 86px;
+
+    padding: 16px 20px 29px 23px;
 
     border-top: 1px solid #E1E1E1;
 
@@ -205,14 +211,17 @@
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 1.5;
+
+        width: 133px;
 
         text-align: center;
 
         color: #907E82;
 
         @media screen and (min-width: 768px) {
-            line-height: 26px;
+            line-height: 1.86;
+            width: 278px;
         }
     }
 
