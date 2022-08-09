@@ -47,8 +47,9 @@ img {
 }
 
 .customer-container {
-  max-width: 767px;
-  width: 100%;
+ width: 320px;
+ margin-left: auto;
+ margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -159,7 +160,7 @@ img {
   }
 
   .customer-container {
-    max-width: 1199px;
+   width: 768px;
 
     padding-left: 74px;
     padding-right: 74px;
@@ -218,7 +219,8 @@ img {
   }
 
   .customer-container {
-    max-width: 100%;
+    width: 1200;
+
 
     padding-left: 116px;
     padding-right: 116px;
