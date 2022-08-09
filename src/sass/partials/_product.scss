@@ -280,10 +280,25 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    .product {
+
+        &__container {
+            padding: 60px 16px;
+            max-width: $desktop;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_list {
+            display: flex;
+            gap: 32px;
+
+            flex-basis: calc((100% - 64px) / 3);
+        }
+    }
+
 
     &__container {
       padding: 60px 16px;
