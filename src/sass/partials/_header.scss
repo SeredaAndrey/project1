@@ -7,14 +7,16 @@
     background-color: $bgc-primary;
     width: $mobile;
     // border: 1px dotted red;
-    min-height: 36px;
+    height: 66px;
     margin: 0 auto;
     @media screen and (max-width: $tablet) {
       width: $mobile;
+      height: 66px;
       padding: 8px 20px;
     }
     @media screen and (min-width: $tablet) {
       width: $tablet;
+      height: 82px;
       padding: 32px 32px 0 32px;
     }
     @media screen and (min-width: $desktop) {
@@ -29,30 +31,33 @@
     }
   }
   &__nav {
-    // display: none;
-    transform: translateY(-100vh);
-    transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: $desktop) {
+      transform: translateY(-100vh);
+      transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     @media screen and (min-width: $desktop) {
+      transform: translateY(0);
       display: block;
       position: absolute;
       top: 52px;
       left: 363px;
-      z-index: 20;
+      z-index: 198;
     }
     &.is-open {
       @media screen and (min-width: $desktop) {
+        transform: translateY(0);
         display: block;
         position: absolute;
         top: 52px;
         left: 363px;
-        z-index: 20;
+        z-index: 198;
       }
 
       transform: translateY(0);
       display: block;
       position: absolute;
-      z-index: 150;
+      z-index: 198;
       top: 136px;
       right: 128;
 
@@ -169,19 +174,20 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 1.31;
-      //   transform: translate(0);
+      transform: translate(0);
       @media screen and (min-width: $tablet) {
         right: 34px;
         top: 58px;
         width: 186px;
-        // transform: translate(0);
+        z-index: 120;
+        transform: translate(0);
       }
       @media screen and (min-width: $desktop) {
         position: absolute;
         display: block;
         right: 20px;
         top: 40px;
-        z-index: 20;
+        z-index: 120;
       }
     }
   }
