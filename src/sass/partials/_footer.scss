@@ -2,6 +2,8 @@
     background: #fff5f6;
     width: 320px;
 
+
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
 
@@ -11,6 +13,11 @@
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding-top: 0px;
+    }
+
+    &__hidden-title {
+        display: none;
     }
 
     &__container {
