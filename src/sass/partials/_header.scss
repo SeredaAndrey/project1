@@ -37,9 +37,9 @@
     }
 
     @media screen and (min-width: $desktop) {
-      transform: translateY(0);
+      // transform: translateY(0);
 
-      display: block;
+      display: none;
       position: absolute;
       top: 52px;
       left: 363px;
