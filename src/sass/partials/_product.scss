@@ -1,7 +1,10 @@
 .product {
   &__container {
+    @media screen and (max-width: $tablet) {
+      width: $mobile;
+    }
     padding: 60px 20px;
-    width: $mobile;
+    max-width: $mobile;
     margin-left: auto;
     margin-right: auto;
 
@@ -276,6 +279,7 @@
 
 @media screen and (min-width: $desktop) {
 
+
     .product {
 
         &__container {
@@ -293,6 +297,7 @@
             flex-basis: calc((100% - 64px) / 3);
         }
     }
+
 
 
   .product_item {

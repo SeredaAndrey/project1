@@ -4,14 +4,8 @@
   |============================
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
+
+p{
   margin: 0;
   padding: 0;
 }
@@ -47,7 +41,7 @@ img {
 }
 
 .customer-container {
- width: 320px;
+ width: $mobile;
  margin-left: auto;
  margin-right: auto;
   padding-left: 20px;
@@ -67,7 +61,6 @@ img {
 
 .customer-photo {
   position: relative;
-  max-width: 100%;
   height: auto;
   margin-bottom: 75px;
 
@@ -103,6 +96,8 @@ img {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  user-select: none;
   width: 157px;
 
   font-family: 'DM Sans';
@@ -111,7 +106,7 @@ img {
   font-size: 12px;
   line-height: 2.5;
 
-  text-align: center;
+  
 
   color: #000000;
 
@@ -134,6 +129,8 @@ img {
 }
 
 .customer-name {
+  user-select: none;
+
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -160,7 +157,7 @@ img {
   }
 
   .customer-container {
-   width: 768px;
+   width: $tablet;
 
     padding-left: 74px;
     padding-right: 74px;
@@ -219,7 +216,7 @@ img {
   }
 
   .customer-container {
-    width: 1200;
+    width: $desktop;
 
 
     padding-left: 116px;
@@ -300,7 +297,19 @@ img {
 }
 
 .slick-active button {
-  background-image: url(../images/customer/elements/home.png);
+  background-image: url(../images/customer/elements/house_sm.svg);
+  background-color: $color-secondary-text-contrast-product;
+  border-radius: 0;
   background-repeat: no-repeat;
   background-size: contain;
+  user-select: none;
+
+@media screen and (min-width: $tablet){
+  background-image: url(../images/customer/elements/house_md.svg);
+}
+
+@media screen and (min-width: $desktop){
+  background-image: url(../images/customer/elements/house_lg.svg);
+}
+
 }
