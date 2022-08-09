@@ -48,7 +48,7 @@
 
   &__text {
     color: $color-primary;
-    margin: 0 0 30px 0;
+    margin: 0 0 15px 0;
     width: 370px;
     text-align: center;
 
@@ -89,13 +89,13 @@
   &:hover,
   &:focus {
     .modal__button-icon {
-      fill: $fill-ico-hover;
+      stroke: $fill-ico-hover;
     }
   }
 }
 
 .modal__button-icon {
-  fill: $color-contur-menu;
+  stroke: $color-contur-menu;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -177,7 +177,7 @@
     }
     border: 1px solid $color-contur-menu;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     &:focus-within {
       border-color: $fill-ico-hover;
     }
@@ -216,7 +216,7 @@
   @media screen and (min-width: $tablet) {
     width: 500px;
     height: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: $desktop) {
     width: 423px;
@@ -307,6 +307,23 @@
   border-color: $fill-ico-hover;
   fill: $color-primary;
   stroke: $color-primary-hover;
+}
+
+.button--modal {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 176%;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    width: 200px;
+    height: 30px;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 44px;
+  }
 }
 
 body {
