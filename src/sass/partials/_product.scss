@@ -30,10 +30,9 @@
   font-size: 18px;
   line-height: 21px;
 
-  // text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: $color-secondary-descr;
 }
 
 .product_title {
@@ -87,7 +86,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $color-primary;
 }
 
 .product_item {
@@ -180,7 +179,7 @@
   .product {
     &__container {
       padding: 60px 32px;
-      max-width: $tablet;
+      width: $tablet;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -206,8 +205,6 @@
 
     text-align: center;
     text-transform: uppercase;
-
-    color: #ffa5ba;
   }
 
   .product_main-title {
@@ -220,8 +217,6 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    color: #d41443;
   }
 
   .product_description {
@@ -285,7 +280,7 @@
 
         &__container {
             padding: 60px 16px;
-            max-width: $desktop;
+            width: $desktop;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -299,22 +294,6 @@
         }
     }
 
-
-    &__container {
-      padding: 60px 16px;
-      max-width: $desktop;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &_list {
-      display: flex;
-      gap: 32px;
-
-      flex-basis: calc((100% - 64px) / 3);
-    }
-  }
 
   .product_item {
     margin-top: 281px;
