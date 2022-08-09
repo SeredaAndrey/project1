@@ -21,6 +21,7 @@
     }
     @media screen and (min-width: $desktop) {
       width: $desktop;
+      padding: 37px 16px 0 16px;
     }
   }
   &__logo {
@@ -39,7 +40,7 @@
     @media screen and (min-width: $desktop) {
       // transform: translateY(0);
 
-      display: none;
+      // display: none;
       position: absolute;
       top: 52px;
       left: 363px;
@@ -161,7 +162,7 @@
     @media screen and (min-width: $desktop) {
       position: absolute;
       display: block;
-      right: 20px;
+      right: 16px;
       top: 40px;
       z-index: 20;
     }
