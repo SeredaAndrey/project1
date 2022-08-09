@@ -1,11 +1,14 @@
 .advantages {
-  padding: 106px 20px 60px 20px;
-  background-color: #fff5f6;
   &__container {
     max-width: 320px;
-
     margin-left: auto;
     margin-right: auto;
+    padding: 106px 20px 60px 20px;
+    background-color: #fff5f6;
+    @media screen and (min-width: $tablet) {
+      max-width: 768px;
+      padding: 146px 32px 64px 32px;
+    }
   }
 }
 
@@ -22,6 +25,11 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
 
 .advantages__img1::before {
   content: '';
@@ -35,6 +43,11 @@
 
   background-repeat: no-repeat;
   background-image: url(/src/images/advantages/advantages-img-1.png);
+  @media screen and (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-172%);
+  }
 }
 .advantages__img2::before {
   content: '';
@@ -48,6 +61,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/src/images/advantages/advantages-img-2.png);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-172%);
+  }
 }
 .advantages__img3::before {
   content: '';
@@ -60,6 +76,9 @@
   position: absolute;
   background-repeat: no-repeat;
   background-image: url(/src/images/advantages/advantages-img-3.png);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-172%);
+  }
 }
 
 .advantages__subtitle {
@@ -75,9 +94,12 @@
   text-transform: uppercase;
 
   color: #d41443;
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
 }
 .advantages__item {
-  margin-bottom: 98px;
   width: 230px;
   position: relative;
   font-family: 'DM Sans';
@@ -86,4 +108,17 @@
   font-size: 12px;
   line-height: 170%;
   color: #000000;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 98px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-style: normal;
+    width: 160px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 174%;
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
 }
