@@ -1,29 +1,110 @@
 .about {
     background-color: $bgc-secondary;
 
-    &__container {
-            max-width: 320px;
-            padding: 60px 20px 40px 20px;
-            margin-left: auto;
-            margin-right: auto;
-
-            background-repeat: no-repeat;
-            background-position: 0 576px;
+    @media screen and (min-width: $desktop) {
+        background-repeat: no-repeat;
             background-size: contain;
-            background-image: url(../images/about/about-bg-pic_s.png);
-
-                @media only screen and (-webkit-min-device-pixel-ratio: 1.25) {
-            
-                background-image: url(../images/about/about-bg-pic_s@2x.png);
-                // background-image: url(../images/about/about-bg-pic_s@3x.png);
+            background-position: 0 200px;
+            background-image: url(../images/about/about-bg-pic_l.png);
+        
+            @media only screen and (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/about/about-bg-pic_l@2x.png);
+            }
+        
+            @media only screen and (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(../images/about/about-bg-pic_l@3x.png);
             }
 
+    }
+
+    &__container {
+            width: $mobile;
+            padding: 60px 20px 40px 20px;
+            margin: 0 auto;
+                
+                @media screen and (min-width: $tablet) {
+                    width: $tablet;
+                    padding: 60px 32px 60px 32px;
+                }
+                @media screen and (min-width: $desktop) {
+                    width: $desktop;
+                    padding: 60px 16px 60px 16px;
+                }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+            background-repeat: no-repeat;
+            background-position: 0 375px;
+            background-size: contain;
+            background-image: url(../images/about/about-bg-pic_s.png);
+        
+            @media only screen and (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/about/about-bg-pic_s@2x.png);
+            }
+        
+            @media only screen and (min-device-pixel-ratio: 3),
+            (-webkit-min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+                background-image: url(../images/about/about-bg-pic_s@3x.png);
+            }
+
+            @media screen and (min-width: $tablet) {
+                background-image: none;
+            }
+            
+            @media screen and (min-width: $desktop) {
+                background-image: none;
+            }     
+    }
+
+    &__img {
+        max-width: 280px;
+
+        @media screen and (min-width: $tablet) {
+            max-width: 336px;
         }
+        
+        @media screen and (min-width: $desktop) {
+            max-width: 501px;
+        }
+    }
+
+    &__elements {
+        display: block;
+
+        @media screen and (min-width: $tablet) {
+                margin-left: 32px;
+                margin-right: 0;
+        }
+        @media screen and (min-width: $desktop) {
+                margin-left: 99px;
+                margin-right: 0;
+        }
+    }
 
     &__desc {
             margin: 40px 0 20px 0;
             padding: 0;
             list-style: none;
+
+            @media screen and (min-width: $tablet) {
+                margin: 0 0 40px 0;
+            }
         }
     &__desc-item {
             max-width: 220px;
@@ -32,16 +113,43 @@
             line-height: 1.6;
             color: $color-secondary-text-contrast;
 
+            @media screen and (min-width: $tablet) {
+                    font-size: 14px;
+                    max-width: 334px;
+            }
+            @media screen and (min-width: $desktop) {
+                    font-size: 16px;
+                    max-width: 463px;
+            }
+                
+            &:nth-child(n+2) {
+                @media screen and (min-width: $desktop) {
+                    font-size: 14px;
+                }
+            }
+
             &:last-child {
                 margin-top: 10px;
+
+                @media screen and (min-width: $desktop) {
+                    margin-top: 32px;
+                }
             }
     
             &--bold {
                 color: $color-secondary-text;
                 margin-bottom: 25px;
+
+            @media screen and (min-width: $tablet) {
+                    margin-bottom: 18px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                    margin-bottom: 32px;
+            }
+                
             }
         }
-            
 }
 .section-subtitle {
     display: block;
@@ -55,6 +163,14 @@
     text-transform: uppercase;
     
     color: $color-secondary-descr;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+    }
 }
 .section-title {
     margin-top: 15px;
@@ -68,6 +184,18 @@
     text-transform: uppercase;
 
     color: $color-secondary-title;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 48px;
+            margin-bottom: 40px;
+            margin-top: 16px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 58px;
+            margin-bottom: 60px;
+            margin-top: 16px;
+        }
 }
 img {
     display: block;
@@ -78,19 +206,23 @@ img {
     align-items: center;
     text-align: center;
     border: none;
-    font-family: inherit;
-    min-width: 176px;
+    font-weight: 700;
+    width: 176px;
     min-height: 44px;
     background: $bgc-buttons;
     border-radius: 22px;
 }
 .button-text {
     padding-right: 13px;
-    font-weight: 700;
+    
     font-size: 14px;
     line-height: 1.3;
     align-items: center;
     text-align: center;
     
     color: #D41443;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+    }
 }

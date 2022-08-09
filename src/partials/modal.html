@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden" data-modal>
+  <form class="modal" autocomplete="off">
+    <button class="modal__button-close" data-modal-close>
+      <svg class="modal__button-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal__text">Leave your details, we will call you back</p>
+    <label class="modal__form-field">
+      <input type="text" class="modal__form-input" name="name" placeholder="" />
+      <span class="modal__form-label">Name</span>
+      <svg width="18" height="18" class="modal__icon-label">
+        <use href="./images/icons.svg#icon-person"></use>
+      </svg>
+    </label>
+    <label class="modal__form-field">
+      <input
+        type="text"
+        class="modal__form-input"
+        name="phone"
+        placeholder=""
+      />
+      <span class="modal__form-label">Phone</span>
+      <svg width="18" height="18" class="modal__icon-label">
+        <use href="./images/icons.svg#icon-phone"></use>
+      </svg>
+    </label>
+    <label class="modal__form-field">
+      <input
+        type="text"
+        class="modal__form-input"
+        name="email"
+        placeholder=""
+      />
+      <span class="modal__form-label">e-mail</span>
+      <svg width="18" height="18" class="modal__icon-label">
+        <use href="./images/icons.svg#icon-email"></use>
+      </svg>
+    </label>
+
+    <label class="modal__text-field">
+      <textarea
+        class="modal__text-area"
+        name="comment"
+        id="comment"
+        rows="5"
+        placeholder="Enter text"
+      ></textarea>
+      <span class="modal__form-label">Comment</span>
+    </label>
+
+    <label class="modal__checkbox">
+      <input
+        class="modal__checkbox-input"
+        type="checkbox"
+        name="accept"
+        value="accept"
+      />
+      <span class="modal__icon-checkbox"></span>
+      <span class="modal__text-checkbox"
+        >I agree with the newsletter and accept
+      </span>
+      <span class="modal__text-checkbox modal__text-checkbox--left"
+        ><a class="modal__link-checkbox" href="">
+          Terms of an agreement</a
+        ></span
+      >
+    </label>
+    <button type="submit" class="button button--modal">Send</button>
+  </form>
+</div>

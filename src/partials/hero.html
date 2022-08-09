@@ -1,12 +1,16 @@
 <section class="hero">
   <div class="hero__container">
     <div class="hero__position">
-      <h1 class="hero__name">
+      <h1 id="hero" class="hero__name">
         ice cream made with <span class="hero__name--color">passion</span>
       </h1>
       <div class="hero__buttons">
-        <button id="" class="hero__btn btn--clr">Products</button>
-        <button id="" class="hero__btn">How it’s made?</button>
+        <button type="button" class="hero__btn btn--clr">
+          <a href="#products" class="hero--id-product">Products</a>
+        </button>
+        <button type="button" class="hero__btn">
+          <a href="#about" class="hero--id-about">How it’s made?</a>
+        </button>
       </div>
     </div>
     <div class="hero__img">
@@ -74,10 +78,13 @@
           height=" "
         />
       </picture>
-      <p class="part__desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
+      <div class="hero__element">
+        <p class="part__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="hero__button--wrap"></button>
+      </div>
     </div>
     <div class="hero__side">
       <div class="hero__cafe">

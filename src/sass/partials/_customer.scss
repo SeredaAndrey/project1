@@ -1,0 +1,306 @@
+/**
+  |============================
+  | Сброс стилей
+  |============================
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  | Mobile styles
+  |============================
+*/
+.customer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.customer-container {
+ width: 320px;
+ margin-left: auto;
+ margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $color-primary;
+}
+
+.customer-slider {
+  list-style: none;
+}
+
+.customer-thumb {
+  display: flex;
+  justify-content: center;
+}
+
+.customer-photo {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 75px;
+
+  border-radius: 44px;
+  border: transparent;
+}
+
+.customer-text-box {
+  position: relative;
+  margin-bottom: 53px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  background-image: repeating-linear-gradient(
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 27px,
+    #e1e1e1 30px,
+    rgba(0, 0, 0, 0) 30px
+  );
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6%;
+    left: 0;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/customer/elements/brackets.jpg);
+  }
+}
+
+.customer-text {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 157px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+
+  text-align: center;
+
+  color: #000000;
+
+  min-width: 157px;
+
+  &::after {
+    content: '';
+
+    bottom: 0;
+    left: 40%;
+    bottom: -15%;
+
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 4px;
+
+    background-image: url(../images/customer/elements/Group\ 8.png);
+  }
+}
+
+.customer-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.1;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+
+
+/**
+  |============================
+  | Tablet Styles
+  |============================
+*/
+
+@media screen and (min-width: $tablet) {
+  .customer {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .customer-container {
+   width: 768px;
+
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  .customer-photo {
+    margin-bottom: 20px;
+  }
+
+  .customer-text-box {
+    width: 608px;
+    margin-bottom: 60px;
+
+    background-image: repeating-linear-gradient(
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 26px,
+      #e1e1e1 29px,
+      rgba(0, 0, 0, 0) 25px
+    );
+    &::before {
+      content: '';
+      top: -20%;
+      left: 2%;
+    }
+  }
+
+  .customer-text {
+    width: 514px;
+
+    font-size: 14px;
+    line-height: 2.1;
+    &::after {
+      content: '';
+
+      left: 47%;
+      bottom: -40%;
+    }
+  }
+
+  .customer-name {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+
+/**
+  |============================
+  | Desctop Styles
+  |============================
+*/
+
+@media screen and (min-width: $desktop) {
+  .customer {
+    padding-bottom: 60px;
+  }
+
+  .customer-container {
+    width: 1200;
+
+
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+
+  .customer-photo {
+    margin-bottom: 16px;
+  }
+
+  .customer-text-box {
+    width: 968px;
+    margin-bottom: 75px;
+
+    background-image: repeating-linear-gradient(
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 27px,
+      #e1e1e1 26px,
+      rgba(0, 0, 0, 0) 30px
+    );
+    &::before {
+      content: '';
+      top: -29%;
+      left: 8%;
+    }
+  }
+
+  .customer-text {
+    width: 750px;
+
+    font-size: 16px;
+    line-height: 1.9;
+    &::after {
+      content: '';
+
+      left: 48%;
+      bottom: -90%;
+    }
+  }
+
+  .customer-name {
+    font-size: 20px;
+  }
+}
+
+/**
+  |============================
+  | SLICK SLIDER
+  |============================
+*/
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+
+  justify-content: center;
+  border: 0;
+}
+
+.slick-dots button {
+  position: relative;
+  border: transparent;
+  font-size: 0;
+  height: 12px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slick-active button {
+  background-image: url(../images/customer/elements/home.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
