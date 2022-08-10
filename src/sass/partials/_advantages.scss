@@ -1,18 +1,17 @@
 .advantages {
   &__container {
-
-    background-color: #fff5f6;
-    padding: 106px 20px 60px 20px;
     width: $mobile;
-
-
+    background-color: $bgc-secondary;
+    padding: 82px 20px 60px;
     margin-left: auto;
     margin-right: auto;
-    padding: 106px 20px 60px 20px;
-    background-color: #fff5f6;
     @media screen and (min-width: $tablet) {
-      max-width: 768px;
-      padding: 146px 32px 64px 32px;
+      width: $tablet;
+      padding: 100px 32px 64px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+      padding: 100px 16px 120px;
     }
   }
 }
@@ -53,6 +52,9 @@
     height: 50px;
     transform: translateY(-172%);
   }
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-180%);
+  }
 }
 .advantages__img2::before {
   content: '';
@@ -69,6 +71,10 @@
   @media screen and (min-width: $tablet) {
     transform: translateY(-172%);
   }
+
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-180%);
+  }
 }
 .advantages__img3::before {
   content: '';
@@ -84,6 +90,9 @@
   @media screen and (min-width: $tablet) {
     transform: translateY(-172%);
   }
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-180%);
+  }
 }
 
 .advantages__subtitle {
@@ -98,10 +107,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $color-secondary-title;
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: calc(55 / 48);
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
   }
 }
 .advantages__item {
@@ -112,18 +125,26 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
-  color: #000000;
+  color: $color-secondary-text;
   @media screen and (max-width: $tablet) {
-    margin-bottom: 98px;
+    &:not(:last-child) {
+      margin-bottom: 98px;
+    }
   }
   @media screen and (min-width: $tablet) {
-    font-style: normal;
     width: 160px;
-    font-weight: 700;
     font-size: 14px;
     line-height: 174%;
     &:not(:last-child) {
       margin-right: 22px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 288px;
+    font-size: 16px;
+    line-height: 176%;
+    &:not(:last-child) {
+      margin-right: 115px;
     }
   }
 }
