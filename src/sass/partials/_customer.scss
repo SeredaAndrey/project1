@@ -4,8 +4,7 @@
   |============================
 */
 
-
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -42,9 +41,9 @@ img {
 }
 
 .customer-container {
- width: $mobile;
- margin-left: auto;
- margin-right: auto;
+  width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -58,45 +57,46 @@ img {
 .customer-thumb {
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
 }
 
 .customer-photo {
-  position: relative;
-  height: auto;
-  margin-bottom: 75px;
-
   border-radius: 44px;
   border: transparent;
 }
 
-.customer-text-box {
+.customer-bck-color {
   position: relative;
-  margin-bottom: 53px;
+  z-index: -10;
+  background-color: #fafafa;
+
+  margin-bottom: 36px;
+}
+
+.customer-text-box {
+  padding-top: 43px;
+  padding-bottom: 17px;
+
   margin-left: auto;
   margin-right: auto;
+
   width: 180px;
-  background-image: repeating-linear-gradient(
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 27px,
-    #e1e1e1 30px,
-    rgba(0, 0, 0, 0) 30px
-  );
 
   &::before {
     content: '';
+    z-index: -9;
     position: absolute;
-    top: -6%;
-    left: 0;
+    top: 30px;
+    left: 53px;
     width: 54px;
     height: 40px;
-    background-image: url(../images/customer/elements/brackets.jpg);
+    background-image: url(../images/customer/elements/quotation.png);
   }
 }
 
 .customer-text {
-  position: relative;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   text-align: center;
   user-select: none;
   width: 157px;
@@ -107,31 +107,20 @@ img {
   font-size: 12px;
   line-height: 2.5;
 
-  
-
   color: #000000;
 
-  min-width: 157px;
-
-  &::after {
-    content: '';
-
-    bottom: 0;
-    left: 40%;
-    bottom: -15%;
-
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 32px;
-    height: 4px;
-
-    background-image: url(../images/customer/elements/Group\ 8.png);
-  }
+  
+  background-image: repeating-linear-gradient(
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 28px,
+    #e1e1e1 28px,
+    rgba(0, 0, 0, 0) 30px
+  );
 }
 
 .customer-name {
+  position: relative;
   user-select: none;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -141,9 +130,21 @@ img {
   text-align: center;
 
   color: #000000;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 124px;
+    top: -16px;
+
+    background-repeat: no-repeat;
+
+    width: 32px;
+    height: 4px;
+
+    background-image: url(../images/customer/elements/Group\ 8.png);
+  }
 }
-
-
 
 /**
   |============================
@@ -158,30 +159,29 @@ img {
   }
 
   .customer-container {
-   width: $tablet;
+    width: $tablet;
 
     padding-left: 74px;
     padding-right: 74px;
   }
 
-  .customer-photo {
+  .customer-thumb {
     margin-bottom: 20px;
   }
 
-  .customer-text-box {
-    width: 608px;
-    margin-bottom: 60px;
+  .customer-bck-color {
+    margin-bottom: 24px;
+  }
 
-    background-image: repeating-linear-gradient(
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0) 26px,
-      #e1e1e1 29px,
-      rgba(0, 0, 0, 0) 25px
-    );
+  .customer-text-box {
+    padding-top: 37px;
+    padding-bottom: 44px;
+    width: 608px;
+
     &::before {
       content: '';
-      top: -20%;
-      left: 2%;
+      top: 20px;
+      left: 17px;
     }
   }
 
@@ -190,18 +190,27 @@ img {
 
     font-size: 14px;
     line-height: 2.1;
-    &::after {
-      content: '';
 
-      left: 47%;
-      bottom: -40%;
-    }
+   
+    background-image: repeating-linear-gradient(
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 27px,
+      #e1e1e1 28px,
+      rgba(0, 0, 0, 0) 29px
+    );
   }
 
   .customer-name {
-    margin-bottom: 32px;
+    margin-bottom: 17px;
     font-size: 16px;
     line-height: 1.9;
+
+    &::after {
+      content: '';
+
+      left: 294px;
+      top: -16px;
+    }
   }
 }
 
@@ -219,29 +228,30 @@ img {
   .customer-container {
     width: $desktop;
 
-
     padding-left: 116px;
     padding-right: 116px;
   }
 
-  .customer-photo {
+  .customer-thumb {
     margin-bottom: 16px;
+  }
+
+  .customer-bck-color {
+    margin-bottom: 36px;
   }
 
   .customer-text-box {
     width: 968px;
-    margin-bottom: 75px;
+    padding-top: 47px;
+    padding-bottom: 39px;
 
-    background-image: repeating-linear-gradient(
-      rgba(0, 0, 0, 0) 0,
-      rgba(0, 0, 0, 0) 27px,
-      #e1e1e1 26px,
-      rgba(0, 0, 0, 0) 30px
-    );
+    
+   
+
     &::before {
       content: '';
-      top: -29%;
-      left: 8%;
+      top: 31px;
+      left: 82px;
     }
   }
 
@@ -250,16 +260,24 @@ img {
 
     font-size: 16px;
     line-height: 1.9;
-    &::after {
-      content: '';
 
-      left: 48%;
-      bottom: -90%;
-    }
+    background-image: repeating-linear-gradient(
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 28px,
+    #e1e1e1 28px,
+    rgba(0, 0, 0, 0) 30px
+  );
   }
 
   .customer-name {
     font-size: 20px;
+
+    &::after {
+      content: '';
+
+      left: 468px;
+      top: -16px;
+    }
   }
 }
 
@@ -305,12 +323,11 @@ img {
   background-size: contain;
   user-select: none;
 
-@media screen and (min-width: $tablet){
-  background-image: url(../images/customer/elements/house_md.svg);
-}
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/customer/elements/house_md.svg);
+  }
 
-@media screen and (min-width: $desktop){
-  background-image: url(../images/customer/elements/house_lg.svg);
-}
-
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/customer/elements/house_lg.svg);
+  }
 }
