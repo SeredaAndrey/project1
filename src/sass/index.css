@@ -958,7 +958,7 @@ img {
   position: relative;
   left: 0;
   bottom: 29.76px;
-  z-index: 10000;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .gallery__item--position10 {
@@ -974,6 +974,27 @@ img {
 .gallery__iten--position-absolut {
   display: block;
   position: relative;
+}
+
+.gallery__img--interactive img:focus {
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+
+.gallery__img--interactive img {
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__img--interactive img:hover {
+  transform: scale(1.25) rotate(-5deg);
+  -webkit-transform: scale(1.25) rotate(-5deg);
+  -moz-transform: scale(1.25) rotate(-5deg);
+  position: relative;
+  z-index: 15000;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6, p {

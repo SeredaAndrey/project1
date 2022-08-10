@@ -189,7 +189,7 @@ display: flex;
     left: 0;
     bottom: calc(96px * 0.31);
     
-    z-index: 10000;
+    z-index: 10;
 
 	@media screen and (min-width: 768px) {
         bottom: calc(96px * 0.75);
@@ -203,5 +203,36 @@ display: flex;
     display: block;
     position: relative;
 }
+.gallery__img--interactive  img:focus{
+    transform:rotate(-2deg) ;
+    
+}
+.gallery__img--interactive1{
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery__img--interactive2{
+    transition-property: transform;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.gallery__img--interactive2:hover{
+    transform: scale(0.9) rotate(-5deg);
+ 
+    position: relative;
+    z-index: 15000;
+    
+    cursor: pointer;
+}
+
+.gallery__img--interactive1:hover{
+    transform: scale(1.25) rotate(10deg);
+ 
+    position: relative;
+    z-index: 15000;
+    
+    cursor: pointer;
+}
 
