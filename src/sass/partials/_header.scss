@@ -189,9 +189,10 @@
       @media screen and (min-width: $desktop) {
         position: absolute;
         display: block;
-        right: 20px;
+        right: 16px;
         top: 40px;
-        z-index: 120;
+        width: 159px;
+        z-index: 20;
       }
     }
   }
