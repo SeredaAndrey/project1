@@ -1,10 +1,11 @@
 .header {
+  background-color: $bgc-primary;
   &__container {
     position: relative;
     display: flex;
     align-items: center;
 
-    background-color: $bgc-primary;
+    // background-color: $bgc-primary;
     width: $mobile;
     // border: 1px dotted red;
     height: 66px;
