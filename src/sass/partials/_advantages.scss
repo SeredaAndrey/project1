@@ -1,7 +1,8 @@
 .advantages {
+  background-color: $bgc-secondary;
   &__container {
     width: $mobile;
-    background-color: $bgc-secondary;
+
     padding: 82px 20px 60px;
     margin-left: auto;
     margin-right: auto;
@@ -126,6 +127,9 @@
   font-size: 12px;
   line-height: 170%;
   color: $color-secondary-text;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.5s;
   @media screen and (max-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 98px;
@@ -147,4 +151,9 @@
       margin-right: 115px;
     }
   }
+}
+
+.advantages__item.active {
+  opacity: 1;
+  transform: translateX(0);
 }
