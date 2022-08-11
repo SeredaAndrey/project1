@@ -1,0 +1,2 @@
+const t=document.querySelectorAll(".advantages__item");window.addEventListener("scroll",function(t,e=20,o=!0){let n;return function(){const i=this,s=arguments,c=function(){n=null,o||t.apply(i,s)},l=o&&!n;clearTimeout(n),n=setTimeout(c,e),l&&t.apply(i,s)}}((function(){t.forEach((t=>{const e=window.scrollY+window.innerHeight-t.offsetHeight/2,o=t.offsetTop+t.offsetHeight,n=e>t.offsetTop,i=window.scrollY<o;n&&i?t.classList.add("active"):t.classList.remove("active")}))})));
+//# sourceMappingURL=index.914fd239.js.map
