@@ -76,6 +76,33 @@
         line-height: 1.2;
         font-size: 38px;
         width: 277px;
+
+        &:hover {
+            animation-name: moveBox;
+            animation-duration: 3s;
+        }
+        
+                @keyframes moveBox {
+                    0% {
+                        transform: translate(0, 0);
+                        opacity: 0.3;
+                    }
+        
+                    25% {
+                        opacity: 0.8;
+                    }
+        
+                    50% {
+                        transform: scale(2.5) translate(150px, 20px);
+                        opacity: 1;
+                    }
+        
+                    100% {
+                        transform: translate(10px, 0px);
+                        opacity: 0.7;
+                    }
+                
+                }
     }
 }
 
@@ -178,6 +205,8 @@
             left: 52%;
             width: 236px;
             height: 557px;
+
+            
         }
     }
 
@@ -283,6 +312,22 @@
     @media screen and (min-width:1200px) {
         padding-top: 75px;
         padding-right: 16px;
+
+        animation: rotate 2000ms infinite alternate ease-in-out 1000ms;
+        
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+        
+                50% {
+                    transform: rotate(4deg);
+                }
+
+                100% {
+                    transform: rotate(-1deg);
+                }
+            }
     }
 }
 
@@ -392,6 +437,7 @@
         width: 304px;
         right: 16px;
 
+    
     }
 
     @media screen and (max-width:767px) {
