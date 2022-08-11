@@ -109,7 +109,6 @@ img {
 
   color: #000000;
 
-  
   background-image: repeating-linear-gradient(
     rgba(0, 0, 0, 0) 0,
     rgba(0, 0, 0, 0) 28px,
@@ -154,7 +153,7 @@ img {
 
 @media screen and (min-width: $tablet) {
   .customer {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 40px;
   }
 
@@ -191,7 +190,6 @@ img {
     font-size: 14px;
     line-height: 2.1;
 
-   
     background-image: repeating-linear-gradient(
       rgba(0, 0, 0, 0) 0,
       rgba(0, 0, 0, 0) 27px,
@@ -223,6 +221,7 @@ img {
 @media screen and (min-width: $desktop) {
   .customer {
     padding-bottom: 60px;
+    padding-top: 120px;
   }
 
   .customer-container {
@@ -245,9 +244,6 @@ img {
     padding-top: 47px;
     padding-bottom: 39px;
 
-    
-   
-
     &::before {
       content: '';
       top: 31px;
@@ -262,11 +258,11 @@ img {
     line-height: 1.9;
 
     background-image: repeating-linear-gradient(
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 28px,
-    #e1e1e1 28px,
-    rgba(0, 0, 0, 0) 30px
-  );
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0) 28px,
+      #e1e1e1 28px,
+      rgba(0, 0, 0, 0) 30px
+    );
   }
 
   .customer-name {
