@@ -2,13 +2,15 @@
   <div class="header__container">
     <h2 class="header-hero__title">header site</h2>
     <div class="header__logo header__logo--margin">
-      <a class="header__link" href="#"></a>
+      <a class="header__link-logo" href="#">
         <picture>
           <source
             media=""
-            srcset="./images/header/logo.png 1x, 
-            ./images/header/logo2x.png 2x,
-            ./images/header/logo3x.png 3x"
+            srcset="
+              ./images/header/logo.png   1x,
+              ./images/header/logo2x.png 2x,
+              ./images/header/logo3x.png 3x
+            "
             type="image/png"
           />
           <img src="./images/header/logo.png" alt="ice cream" />
@@ -24,20 +26,28 @@
 
     <nav class="header__nav" data-menu-nav>
       <ul class="header__list">
-        <li class="header__item" >
+        <li class="header__item">
           <a class="header__link" data-menu-button-close1 href="#">Home</a>
         </li>
-        <li class="header__item" >
-          <a class="header__link" data-menu-button-close2 href="#gallery">About us</a>
+        <li class="header__item">
+          <a class="header__link" data-menu-button-close2 href="#gallery"
+            >About us</a
+          >
         </li>
-        <li class="header__item" >
-          <a class="header__link" data-menu-button-close3 href="#about">How it’s made?</a>
+        <li class="header__item">
+          <a class="header__link" data-menu-button-close3 href="#about"
+            >How it’s made?</a
+          >
         </li>
-        <li class="header__item" >
-          <a class="header__link" data-menu-button-close4 href="#product">Our products</a>
+        <li class="header__item">
+          <a class="header__link" data-menu-button-close4 href="#product"
+            >Our products</a
+          >
         </li>
-        <li class="header__item" >
-          <a class="header__link" data-menu-button-close5 href="#contact">Contact</a>
+        <li class="header__item">
+          <a class="header__link" data-menu-button-close5 href="#contact"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -63,7 +73,12 @@
         ></use>
       </svg>
     </button>
-    <button class="button header--modificator" type="button" data-menu-purchase data-modal-open>
+    <button
+      class="button header--modificator"
+      type="button"
+      data-menu-purchase
+      data-modal-open
+    >
       Buy now
       <svg class="button__ico" width="12" height="12">
         <use href="./images/icons.svg#icon-strelka1"></use>

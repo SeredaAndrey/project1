@@ -7,6 +7,10 @@
   @media screen and (min-width: $desktop) {
     height: 82px;
   }
+  &__link-logo {
+    margin: 0;
+    padding: 0;
+  }
   &__container {
     // position: fixed;
     // z-index: 1000000000;
