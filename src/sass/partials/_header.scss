@@ -43,7 +43,7 @@
   &__logo {
     &--margin {
       @media screen and (min-width: $desktop) {
-        transform: translateY(-6px);
+        transform: translateY(-2px);
         margin-right: 128px;
       }
     }
