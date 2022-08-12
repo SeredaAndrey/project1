@@ -35,6 +35,9 @@ p {
   padding-bottom: 20px;
   width: 320px;
   margin: 0 auto;
+  &__title {
+    display: none;
+  }
 }
 .contact__conteiner-list {
   margin: 0 auto;
